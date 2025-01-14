@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Web Page</title>
+  <title>APK File List</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -21,12 +21,28 @@
     main {
       padding: 20px;
     }
-    h1 {
-      color: #4CAF50;
+    .apk-list {
+      list-style: none;
+      padding: 0;
     }
-    p {
-      font-size: 16px;
-      line-height: 1.6;
+    .apk-item {
+      background: #fff;
+      margin: 10px 0;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .apk-item img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
+    .apk-item a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
     }
     footer {
       text-align: center;
@@ -41,17 +57,27 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to My Simple Web Page</h1>
+    <h1>APK File List</h1>
   </header>
 
   <main>
-    <h2>About this Page</h2>
-    <p>This is a basic HTML page to show how a simple website is structured.</p>
-    <p>You can add more sections or content as needed!</p>
+    <ul class="apk-list">
+      <!-- Example for Tv.apk -->
+      <li class="apk-item">
+        <img src="Icons/tv.png" alt="TV App Icon">
+        <a href="APK Files/Tv.apk" download>TV APK</a>
+      </li>
+      <!-- Example for Music.apk -->
+      <li class="apk-item">
+        <img src="Icons/music.png" alt="Music App Icon">
+        <a href="APK Files/Music.apk" download>Music APK</a>
+      </li>
+      <!-- Add more APK files here -->
+    </ul>
   </main>
 
   <footer>
-    <p>&copy; 2025 Simple Web Page</p>
+    <p>&copy; 2025 APK File List</p>
   </footer>
 </body>
 </html>
